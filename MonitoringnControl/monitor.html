@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring & Control</title>
+    <link rel="shortcut icon" href="../Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav>
+        <img src="../Assets/logo.png" alt="Logo">
+        <h1>Air Care</h1>
+        <a href="../index.html">About Project</a>
+        <a href="#IssuenSol">Issues & Solutions</a>
+        <a href="./monitor.html">Remote Monitoring</a>
+        <a href="#control">Smart Control</a>
+    </nav>
+  
+    <div class="title">
+        <h1>Remote Surveillance </h1>
+    </div>
+
+    <h2 class="sub-title">Enviromental Parameters</h2>
+
+    <div class="container">
+        <div class="items">
+            <img src="./Assets/Envir/temp.png" alt="Temp Pic">
+            <h1>22°C</h1>
+        </div>
+    
+        <div class="items">
+            <img src="./Assets/Envir/Humidity.png" alt="hum pic">
+            <h1>45%</h1>
+        </div>
+    
+        <div class="items">
+            <img src="./Assets/Envir/Dust.png" alt="dust pic">
+            <h1>25 µg/m³</h1>
+        </div>
+    
+         <div class="items">
+            <img src="./Assets/Envir/fan.png" alt="fan">
+            <h1>2000 RPM</h1>
+        </div>
+
+        <div class="items">
+            <img src="./Assets/Envir/vibr.avif" alt="">
+            <h1>No vibration detected</h1>
+        </div>
+    </div>
+
+    <h2 class="sub-title">Electrical Parameters</h2>
+
+    <div class="container">
+        <div class="items">
+            <img src="./Assets/Elec/volt.jpg" alt="volt pic">
+            <h1>220V</h1>
+        </div>
+    
+        <div class="items">
+            <img src="./Assets/Elec/current.jpg" alt="current pic">
+            <h1>12A</h1>
+        </div>
+    
+        <div class="items">
+            <img src="./Assets/Elec/power.jpeg" alt="">
+            <h1>2500 w</h1>
+        </div>
+    
+        <div class="items">
+            <img src="./Assets/Elec/energy.png" alt="">
+            <h1>2 kwh</h1>
+        </div>
+
+        <div class="items">
+            <img src="./Assets/Elec/PF.png" alt="">
+            <h1>0.8 PF</h1>
+        </div>
+
+        <div class="items">
+            <img src="./Assets/Elec/Frequency.png" alt="">
+            <h1>55 Hz</h1>
+        </div>
+    </div>
+
+    
+    <div id="control" class="title">
+        <h1>Smart Control</h1>
+    </div>
+
+    <div class="container"> 
+        <div onclick="powerOn()" id="power-btn" class="power-btn-off"> </div>
+    </div>
+
+    <script>
+        function powerOn() {
+            const powerButton = document.querySelector('#power-btn');
+            powerButton.classList.toggle("power-btn-on");
+            powerButton.classList.toggle("power-btn-off");
+        }
+    </script>
+
+</body>
+</html>
