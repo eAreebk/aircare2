@@ -9,14 +9,21 @@
 </head>
 <body>
 
-    <nav >
-        <img src="./Assets/logo.png" alt="Logo">
-        <h1 >Air Care</h1>
-        <a href="./index.html">About Project</a>
-        <a href="#IssuenSol">Issues & Solutions</a>
-        <a href="./MonitoringnControl/monitor.html">Login</a>
-        <a href="./MonitoringnControl/monitor.html">Signup</a>
-    </nav>
+        <nav class="navbarp">
+            <div class="logo-container">
+                <img src="./Assets/logo.png" alt="Logo">
+                <h1>Air Care</h1>
+            </div>
+        
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <div class="nav-links" id="navLinks">
+                <a href="./index.html">About Project</a>
+                <a href="#IssuenSol">Issues & Solutions</a>
+                <a href="./MonitoringnControl/monitor.html">Login</a>
+                <a href="./MonitoringnControl/monitor.html">Signup</a>
+            </div>
+        </nav>
+        
 
 
 
@@ -29,25 +36,25 @@
         <div class="items">
               <img src="./Assets/Monitoring.png" alt="Monitoring Screen">
               <h1>Remote Surveillance</h1>
-              <h3>Remotely monitor physical parameters of the air-conditioner, such as temperature and voltage.</h3>
+              <p>Remotely monitor physical parameters of the air-conditioner, such as temperature and voltage.</p>
         </div>
 
         <div class="items">
               <img src="./Assets/Controlling.png" alt="Controlling Pic">
               <h1>Smart Control</h1>
-              <h3>Smartly switch on/off air-conditioner by web-platform.</h3>
+              <p>Smartly switch on/off air-conditioner by web-platform.</p>
         </div>
 
         <div class="items">
               <img src="./Assets/Alert.png" alt="Alert Phone">
               <h1>Alert System</h1>
-              <h3>Give alert whenever any parameter drop low, reaches its lowest, rises high, or hits the highest limit.</h3>
+              <p>Give alert whenever any parameter drop low, reaches its lowest, rises high, or hits the highest limit.</p>
         </div>
 
         <div class="items">
               <img src="./Assets/Safety.png" alt="Safety Hands">
               <h1>Safety System</h1>
-              <h3>Automatically turn off air-conditioner whenever any sensitive parameter reaches its lowest or hits the highest limit.</h3>
+              <p>Automatically turn off air-conditioner whenever any sensitive parameter reaches its lowest or hits the highest limit.</p>
         </div>
     </div>
 
@@ -105,11 +112,16 @@
 
 
 
-
-
-
-
-
+  <script>
+            function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            if (navLinks.style.display === "flex") {
+                navLinks.style.display = "none";
+            } else {
+                navLinks.style.display = "flex";
+            }
+        }
+  </script>
 
 
 
