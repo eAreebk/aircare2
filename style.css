@@ -140,7 +140,7 @@ body{
             font-family: 'Roboto', sans-serif;
             font-style: italic;
             text-align: left;
-            font-weight: 50;
+            font-weight: 70;
         }
 
         .items>p{
@@ -240,6 +240,7 @@ body{
 
     .items>h3{
         font-size: 20px !important;
+        font-weight: 70;
     }
 
     .items>p{
